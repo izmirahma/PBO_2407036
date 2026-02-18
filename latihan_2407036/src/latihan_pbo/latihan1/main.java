@@ -1,4 +1,4 @@
-package latihan_pbo;
+package latihan_pbo.latihan1;
 
 class Cafe{
     String nama;
@@ -42,7 +42,7 @@ public class main {
         Cafe cafe1 = new Cafe ("kenangan", "cirebon");
         Cafe cafe2 = new Cafe ("Janji Jiwa", "Cirebon");
         cafe1.buka();
-        cafe1.setNama("KopiKu")
+        cafe1.setNama("KopiKu");
 
     }
 }
