@@ -3,14 +3,12 @@ package latihan_pbo.tugasinheritance;
 public class Main {
     public static void main(String[] args) {
 
-        // sesuai soal:
-        double panjang = 10;
-        double lebar = 5;
-        double tinggi = 4;
+        BangunRuang balok = new BangunRuang(10, 5, 4);
 
-        BangunRuang br = new BangunRuang(panjang, lebar, tinggi);
+        balok.tampilkanInfoRuang();
 
-        System.out.println("Luas Alas: " + br.hitungLuas());
-        System.out.println("Volume: " + br.hitungVolume());
+        System.out.println("Luas Alas: " + balok.hitungLuas());
+        System.out.println("Volume dari class parent: " + balok.hitungVolume());
+        System.out.println("Volume dari class child: " + balok.hitungVolume2());
     }
 }

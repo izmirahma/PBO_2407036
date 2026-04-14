@@ -2,16 +2,26 @@ package latihan_pbo.tugasinheritance;
 
 public class BangunRuang extends BangunDatar {
 
-    private double tinggi;
+    protected double tinggi;
 
-    // constructor
     public BangunRuang(double panjang, double lebar, double tinggi) {
-        super(panjang, lebar); // ambil dari BangunDatar
+        super(panjang, lebar);
         this.tinggi = tinggi;
     }
 
-    // method hitung volume
+
+
     public double hitungVolume() {
         return hitungLuas() * tinggi;
+    }
+
+    public double hitungVolume2() {
+        return hitungVolume() * 2;
+    }
+
+    public void tampilkanInfoRuang() {
+        System.out.println("Panjang: " + panjang);
+        System.out.println("Lebar: " + lebar);
+        System.out.println("Tinggi: " + tinggi);
     }
 }
