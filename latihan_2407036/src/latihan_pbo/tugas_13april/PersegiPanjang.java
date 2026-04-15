@@ -2,21 +2,21 @@ package latihan_pbo.tugas_13april;
 
 public class PersegiPanjang extends BangunDatar {
 
-    public PersegiPanjang(double panjang, double lebar) {
-        super(panjang, lebar);
+    public PersegiPanjang(double varA, double varB) {
+        super(varA, varB);
     }
 
     @Override
     public double hitungLuas() {
-        return getVarA() * getVarB();
+        return varA * varB;
     }
 
     @Override
     public void tampilkan() {
         System.out.println("Persegi Panjang");
         System.out.println("====================");
-        System.out.println("Panjang: " + getVarA());
-        System.out.println("Lebar: " + getVarB());
+        System.out.println("Panjang: " + varA);
+        System.out.println("Lebar: " + varB);
         System.out.println("Luas: " + hitungLuas());
         System.out.println("====================");
     }
